@@ -17,12 +17,12 @@ type Product = {
 const container = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { staggerChildren: 0.07 } },
-};
+} as const;
 
 const tile = {
   hidden: { opacity: 0, y: 18 },
   show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-};
+} as const;
 
 export default function Products() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -165,3 +165,4 @@ export default function Products() {
     </div>
   );
 }
+
