@@ -120,7 +120,7 @@ export default function RegisterPage() {
             fontSize: "0.875rem",
             marginBottom: "1.25rem",
           }}>
-            <AlertCircle size={18} shrink={0} />
+            <AlertCircle size={18} />
             <span>{error}</span>
           </div>
         )}
@@ -139,7 +139,7 @@ export default function RegisterPage() {
             fontSize: "0.875rem",
             marginBottom: "1.25rem",
           }}>
-            <CheckCircle2 size={18} shrink={0} />
+            <CheckCircle2 size={18} />
             <span>{success}</span>
           </div>
         )}
